@@ -2,7 +2,8 @@
 #212121 - цвет навигации и заголовка - главный текст
 #757575 - цвет телефона и мыла, текста - второстипенный
 #2F303A - цвет фона для секции героя
-#F5F4FA - цвет светлого серого
+#F5F4FA - цвет фона второстипенный, светлого серого
+#E5E5E5 - цвет фона главный
 **/
 
 /*variants */
@@ -15,6 +16,7 @@
     --white-text: #FFFFFF;
     --ground-color: #2F303A;
     --accent2-color: #F5F4FA;
+    --ground-main-color: #E5E5E5;
 }
 
 /*.....MAIN */
@@ -29,6 +31,7 @@ ul {
 }
 
 /*..................HEADER FOR ALL PAGES.........................*/
+
 .web{
     font-family: var(--logo-font);
     font-weight: 700;
@@ -109,6 +112,7 @@ ul {
     background-color: var(--accent-color);
 }
 /*..........STRENGHTS - НАША СИЛА..........*/
+
 .str-item-title {
     font-weight: 700;
     font-size: 14px;
@@ -125,6 +129,7 @@ ul {
     color: var(--second-text-col);
 }
 /*..........PROFESSION - ЧЕМ ЗАНИМАЕМСЯ..........*/
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -135,6 +140,9 @@ ul {
 } /*...TITLE FOR WORK AND TEAM...*/
 
 /*..........TEAM..........*/
+.team {
+    background-color: var(--accent2-color);
+}
 .team-item-title {
     font-weight: 500;
     font-size: 16px;
@@ -158,6 +166,10 @@ ul {
 /*..........FOOTER FOR ALL PAGES..........*/
 .footer {
     background-color: var(--ground-color);
+}
+
+.contacts {
+    font-style: normal;
 }
 .studio-footer {
     font-family: var(--logo-font);
