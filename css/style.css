@@ -19,19 +19,69 @@
     --ground-main-color: #E5E5E5;
 }
 
-/*.....MAIN */
+/*.....*/
 body {
     font-family: var(--text-font);
+    
 }
-a {
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.link {
     text-decoration: none;
 }
-ul {
+
+.list {
     list-style-type: none;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
 /*..................HEADER FOR ALL PAGES.........................*/
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+}
 
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+/*...MAIN LINK/LOGO...*/
+.main-nav .main-link {
+    margin-right: 95px;
+}
 .web{
     font-family: var(--logo-font);
     font-weight: 700;
@@ -48,7 +98,12 @@ ul {
     letter-spacing: 0.03em;
     color: #000000;
 }
+/*... END MAIN LINK/LOGO...*/
+
 /*...navigation...*/
+.nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
 .nav-list-link {
     font-weight: 500;
     font-size: 14px;
@@ -66,6 +121,15 @@ ul {
 }
 
 /*mail y telephone*/
+.mail-tel-list {
+    display: flex;
+    align-items: center;
+    margin-left: 330px;
+}
+
+.mltel-list-item:not(:last-child) {
+    margin-right: 50px;
+}
 .mail-link,
 .tel-link { 
     font-weight: 500;
@@ -89,9 +153,16 @@ ul {
 /*..........MAIN..........*/
 /* ...HERO-MAIN PAGE-STUDIO...*/
 .hero {
+    height: 600px;
     background-color: var(--ground-color); /*цвет фона для секции героя*/
+
+    padding: 200px 0;
+
 }
 .hero-title {
+    width: 700px;
+    height: 120px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
@@ -99,8 +170,21 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-text);
+
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .modal-btn {
+    min-width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    border: 0px;
+
+    padding: 10px 30px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -109,11 +193,35 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--white-text);
-    background-color: var(--accent-color);
+    
+    margin-right: auto;
+    margin-left: auto;
 }
 /*..........STRENGHTS - НАША СИЛА..........*/
+.strengths {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+.strengths-title {
+    display: none;
+}
 
+.strengths-list {
+    display: flex;
+    align-items: center;
+
+}
+
+.str-list-item {
+    width: 270px;
+    height: 100px;
+}
+.str-list-item:not(:last-child) {
+    margin-right: 30px;
+}
 .str-item-title {
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
@@ -129,8 +237,20 @@ ul {
     color: var(--second-text-col);
 }
 /*..........PROFESSION - ЧЕМ ЗАНИМАЕМСЯ..........*/
+.profession {
+    padding-bottom: 95px;
+}
+.profession-list {
+    display: flex;
+    align-items: center;
+}
 
+.profession-list-item:not(:last-child) {
+    margin-right: 30px;
+}
 .section-title {
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
@@ -142,8 +262,31 @@ ul {
 /*..........TEAM..........*/
 .team {
     background-color: var(--accent2-color);
+    padding-bottom: 95px;
+    padding-top: 95px;
+}
+
+.team-list {
+    display: flex;
+    align-items: center;
+}
+.team-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-list-item {
+    width: 270px;
+    height: 368px;
+    background-color: var(--white-text);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    padding-bottom: 30px;
 }
 .team-item-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;  
@@ -166,10 +309,22 @@ ul {
 /*..........FOOTER FOR ALL PAGES..........*/
 .footer {
     background-color: var(--ground-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
 }
 
 .contacts {
     font-style: normal;
+}
+
+.contacts-list-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.contacts-list {
+    margin-top: 20px;
 }
 .studio-footer {
     font-family: var(--logo-font);
@@ -205,24 +360,78 @@ ul {
 
 /*...............CSS FOR PAGE PORTFOLIO...............*/
 /*.......... MAIN PORTFOLIO..........*/
+.works {
+    padding: 95px 0px;
+}
+
+.works-title {
+    display: none;
+}
+
 /*...FILTER BUTTONS...*/
+.filter-list {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.filter-list-item:not(:last-child) {
+    margin-right: 10px;
+}
 .filter-btn {
+    height: 40px;
+    background-color: var(--accent2-color);
+    border-radius: 4px;
+    border: 0px;
+
+    padding: 5px 20px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-col);
-    background-color: var(--accent2-color);
 }
 .filter-btn:hover,
 .filter-btn:focus {
     color: var(--white-text);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 /*...WORKS/PORTFOLIO...*/
+.works-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.works-list-item {
+    width: 370px;
+    height: 405px;
+    background-color: var(--white-text);
+    border: 1px solid #EEEEEE;
+
+    padding-bottom: 20px;
+}
+
+.works-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+.works-list-item:not(:nth-child(n+7)) {
+    margin-bottom: 30px;
+}
+
 .works-item-title {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 5px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
@@ -230,6 +439,8 @@ ul {
     color: var(--main-text-col);
 }
 .works-item-descr {
+    margin: 0px 25px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.875;
