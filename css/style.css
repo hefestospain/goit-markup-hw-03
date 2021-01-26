@@ -63,6 +63,7 @@ img {
 .header {
     padding-top: 30px;
     padding-bottom: 30px;
+    border-bottom: 1px solid #ECECEC;
 }
 .header .container {
     display: flex;
@@ -124,7 +125,7 @@ img {
 .mail-tel-list {
     display: flex;
     align-items: center;
-    margin-left: 330px;
+    margin-left: auto;
 }
 
 .mltel-list-item:not(:last-child) {
@@ -153,16 +154,12 @@ img {
 /*..........MAIN..........*/
 /* ...HERO-MAIN PAGE-STUDIO...*/
 .hero {
-    height: 600px;
     background-color: var(--ground-color); /*цвет фона для секции героя*/
 
     padding: 200px 0;
 
 }
 .hero-title {
-    width: 700px;
-    height: 120px;
-
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
@@ -214,7 +211,6 @@ img {
 
 .str-list-item {
     width: 270px;
-    height: 100px;
 }
 .str-list-item:not(:last-child) {
     margin-right: 30px;
@@ -276,16 +272,18 @@ img {
 
 .team-list-item {
     width: 270px;
-    height: 368px;
     background-color: var(--white-text);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
-    padding-bottom: 30px;
 }
+/*контейнер для падингов для карточек НАША КОМАНДА*/
+.team-pad {
+    padding: 30px 32px;;
+}
+
 .team-item-title {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 10px;;
+
 
     font-weight: 500;
     font-size: 16px;
@@ -317,15 +315,13 @@ img {
 
 .contacts {
     font-style: normal;
+    margin-top: 20px;
 }
 
 .contacts-list-item:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.contacts-list {
-    margin-top: 20px;
-}
 .studio-footer {
     font-family: var(--logo-font);
     font-weight: 700;
@@ -382,7 +378,6 @@ img {
     margin-right: 10px;
 }
 .filter-btn {
-    height: 40px;
     background-color: var(--accent2-color);
     border-radius: 4px;
     border: 0px;
@@ -413,11 +408,8 @@ img {
 }
 .works-list-item {
     width: 370px;
-    height: 405px;
     background-color: var(--white-text);
     border: 1px solid #EEEEEE;
-
-    padding-bottom: 20px;
 }
 
 .works-list-item:not(:nth-child(3n)) {
@@ -426,11 +418,11 @@ img {
 .works-list-item:not(:nth-child(n+7)) {
     margin-bottom: 30px;
 }
-
+/*контейнер для падингов для карточек ПОРТФОЛИО*/
+.portfolio-pad{
+    padding: 20px 24px;
+}
 .works-item-title {
-    margin-top: 20px;
-    margin-left: 25px;
-    margin-right: 25px;
     margin-bottom: 5px;
 
     font-weight: 700;
@@ -440,7 +432,6 @@ img {
     color: var(--main-text-col);
 }
 .works-item-descr {
-    margin: 0px 25px;
 
     font-weight: 400;
     font-size: 16px;
