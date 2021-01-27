@@ -102,6 +102,11 @@ img {
 /*... END MAIN LINK/LOGO...*/
 
 /*...navigation...*/
+.nav-list-link,
+.mail-link,
+.tel-link {
+    padding: 32px 0px;;
+}
 .nav-list-item:not(:last-child) {
     margin-right: 50px;
 }
